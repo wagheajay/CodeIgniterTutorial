@@ -85,10 +85,15 @@ class Users extends CI_Controller
    }
 
 
+   //delete user by id
    public function delete(){
 
       $id = 4;
+      $name = "ajay";
 
-      $this->user_model->delete_users(['id'=> $id]);
+      $this->user_model->delete_users($id);
+
+      echo "Deleted id $id Successfully";
    }
+  
 }
